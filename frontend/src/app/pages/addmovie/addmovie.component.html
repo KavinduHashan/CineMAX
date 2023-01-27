@@ -1,0 +1,107 @@
+<style>
+  .main{
+    /* background-image: url('https://images3.alphacoders.com/115/1153176.png'); */
+    /* background-image: url('https://t4.ftcdn.net/jpg/03/55/83/33/360_F_355833357_NayQN0HNYUkLSp93ALuts9BFjHZ1KT2X.jpg'); */
+    background-image: url('https://wallpaper.dog/large/5487013.jpg');
+    /* background: rgb(38, 0, 0); */
+    /* background-repeat: no-repeat;
+    background-size: auto; */
+    height: 150px;
+    color: white;
+  }
+
+  .main a{
+    float: right;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .main a:hover{
+    color:  rgb(38, 0, 0);
+    background-color: white;
+  }
+
+
+
+  .form-group{
+    width: 600px;
+    margin-left: 325px;
+    padding: 10px;
+  }
+
+  button:hover{
+    color: white;
+    background-color: black;
+  }
+</style>
+
+
+<div class="head">
+  <div class="main">
+    <a href="logout" style="padding: 10px;">Signout</a>
+    <p style="font-family: Ink Free; font-size: 80px; text-align: center;">cine<b>MAX</b></p>
+  </div>
+    <div class="container">
+      <div class="container mt-4" >
+        <div class="container">
+                <h1 style="text-align: center;">Add Movie</h1>
+      <form class="f">
+        <div class="fbody">
+          <div class="form-group">
+              <h5> Movie Name</h5>
+              <input type="text" [(ngModel)]="moviename" [ngModelOptions]="{standalone: true}" class="form-control" id="moviename">
+            </div>
+
+            <div class="form-group">
+              <h5>Start Date</h5>
+              <input type="text" [(ngModel)]="startdate" [ngModelOptions]="{standalone: true}" class="form-control" id="startdate">
+            </div>
+
+            <div class="form-group">
+              <h5>End Date</h5>
+              <input type="text" [(ngModel)]="enddate" [ngModelOptions]="{standalone: true}" class="form-control" id="enddate">
+            </div>
+
+            <div class="form-group">
+              <h5>Time</h5>
+              <input type="text" [(ngModel)]="time" [ngModelOptions]="{standalone: true}" class="form-control" id="time">
+            </div>
+
+            <div class="form-group">
+              <button type="submit" (click)="addfn()" class="btn btn-primary" style="width: 600px;">Add</button>
+            </div>
+          </div>
+          </form><br><hr>
+
+
+      <div class="container mt-4">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>Movie Details</h1>
+        <table class="table" style="width: 1000px;margin-left: 220px;">
+        <thead>
+        <tr>
+          <th scope="col">Movie Name</th>
+          <th scope="col">Start Date</th>
+          <th scope="col">End Date</th>
+          <th scope="col">Time</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let movieItem of movie_Array">
+            <td>{{movieItem.moviename  | uppercase}}</td>
+            <td>{{movieItem.startdate }}</td>
+            <td>{{movieItem.enddate }}</td>
+            <td>{{movieItem.time }}</td>
+            <td>
+              <button type="submit" (click)="editfn(movieItem)" class="btn btn-primary">Edit</button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button type="submit" (click)="deletefn(movieItem)" class="btn btn-primary">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+    </div>
+
+</div>
+
+<br><br><br><hr>
