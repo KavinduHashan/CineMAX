@@ -1,0 +1,27 @@
+<style>
+  .card{
+    width:600px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-control{
+    padding: 10px;
+  }
+</style>
+
+<div>
+  <div>
+<div class="container mt-4" >
+  <div class="card">
+    <h1>feedback</h1>
+    <label>Feedback</label>
+    <input type="text" [(ngModel)]="feedback" [ngModelOptions]="{standalone: true}"  class="form-control"  id="feedback" placeholder="Enter Your Feedback"><br>
+    <button type="submit" (click)="feedbackfn()" class="btn btn-primary">Submit Your Feedback</button>
+  </div>
+</div>
+</div>
+</div><br><br><br><hr>
+
+

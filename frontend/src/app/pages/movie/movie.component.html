@@ -1,0 +1,137 @@
+<style>
+  .main{
+    /* background-image: url('https://images3.alphacoders.com/115/1153176.png'); */
+    /* background-image: url('https://t4.ftcdn.net/jpg/03/55/83/33/360_F_355833357_NayQN0HNYUkLSp93ALuts9BFjHZ1KT2X.jpg'); */
+    background-image: url('https://wallpaper.dog/large/5487013.jpg');
+    /* background: rgb(38, 0, 0); */
+    /* background-repeat: no-repeat;
+    background-size: auto; */
+    height: 200px;
+    color: white;
+  }
+
+  .main a{
+    float: right;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .main a:hover{
+    color:  rgb(38, 0, 0);
+    background-color: white;
+  }
+
+  .lm img{
+    width: 1000px;
+    text-align: center;
+    margin-left: 150px;
+    padding: 15px;
+  }
+
+  .lm a{
+    color: black;
+    float: left;
+    text-decoration: none;
+    /* padding: 10px; */
+    border: 1px solid rgb(38, 0, 0);
+    text-align: center;
+    margin-left: 550px;
+  }
+
+  .lm a:hover{
+    color: white;
+    background-color: rgb(38, 0, 0);
+  }
+
+</style>
+
+
+<div class="head">
+  <div class="main">
+    <a href="login" style="padding: 10px;">Signout</a>
+    <p style="font-family: Ink Free; font-size: 80px; text-align: center;">cine<b>MAX</b></p>
+    <a href="contactus"><h4>CONTACT US</h4></a>
+    <a href="offer"><h4>OFFER</h4></a>
+    <a href="movie"><h4>MOVIE</h4></a>
+    <a href="chatAppUser"><h4>CHAT-WITH-US</h4></a>
+    <a href="home"><h4>HOME</h4></a>
+  </div>
+
+    <div class="container">
+      <h2>Now Showing</h2>
+    </div>
+    <div class="container mt-4" >
+      <!-- <table class="table">
+      <thead>
+      <tr>
+          <th scope="col"></th>
+          <th scope="col">Movie Name</th>
+          <th scope="col">Description</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+           <tr *ngFor="let movieItem of movie_Array">
+          <td><img src="" style="width: 300px; height: 180px;"></td>
+          <td>{{movieItem.moviename }}</td>
+          <td>{{movieItem.description }}</td>
+          <td><a href="Payment" style="background-color: rgb(1, 61, 10); color: white;padding: 15px; text-decoration: none;">Pay</a></td>
+        </tr>
+      </tbody>
+      </table><br><br> -->
+      <table class="table">
+        <tr>
+          <td style="padding: 20px;">
+            <img src="" style="width: 300px; height: 200px;">
+            <h4>Movie Name : </h4>
+            <h6>Start Date : 01 Jan 2023</h6>
+            <h6>End Date : 31 Jan 2023</h6>
+            <h6>Avaliable Time Slot : 10.30AM / 2.00PM</h6>
+            <!-- <a href="booking" style="text-decoration: none; padding: 10px; background-color: rgb(0, 54, 19); color: white; ">Booking</a> -->
+          </td>
+
+          <td style="padding: 20px;">
+            <img src="" style="width: 300px; height: 200px;">
+            <h4>Movie Name : </h4>
+            <h6>Start Date : 01 Jan 2023</h6>
+            <h6>End Date : 31 Jan 2023</h6>
+            <h6>Avaliable Time Slot : 10.30AM / 2.00PM</h6>
+
+          </td>
+
+          <td style="padding: 20px;">
+            <img src="" style="width: 300px; height: 200px;">
+            <h4>Movie Name : </h4>
+            <h6>Start Date : 01 Jan 2023</h6>
+            <h6>End Date : 20 Jan 2023</h6>
+            <h6>Avaliable Time Slot : 10.30AM / 2.00PM</h6>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px;">
+            <img src="" style="width: 300px; height: 200px;">
+            <h4>Movie Name : </h4>
+            <h6>Start Date : 01 Jan 2023</h6>
+            <h6>End Date : 20 Jan 2023</h6>
+            <h6>Avaliable Time Slot : 10.30AM / 2.00PM</h6>
+          </td>
+
+          <td style="padding: 20px;">
+            <img src="" style="width: 300px; height: 200px;">
+            <h4>Movie Name : </h4>
+            <h6>Start Date : 01 Jan 2023</h6>
+            <h6>End Date : 31 Jan 2023</h6>
+            <h6>Avaliable Time Slot : 10.30AM / 2.00PM</h6>
+          </td>
+
+          <td style="padding: 20px;">
+            <img src="" style="width: 300px; height: 200px;">
+            <h4>Movie Name : </h4>
+            <h6>Start Date : 01 Jan 2023</h6>
+            <h6>End Date : 25 Jan 2023</h6>
+            <h6>Avaliable Time Slot : 10.30AM / 2.00PM</h6>
+          </td>
+        </tr>
+      </table><br><br><hr>
+      <app-booking></app-booking>
