@@ -1,0 +1,59 @@
+<style>
+  .chat-messages-show-container{
+   /* background: #b1ffba; */
+   background-image: url('https://w0.peakpx.com/wallpaper/818/148/HD-wallpaper-whatsapp-background-cool-dark-green-new-theme-whatsapp.jpg');
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   overflow: auto;
+}
+
+.chat-messages-show-list {
+  list-style-type:none;
+   margin: 0;
+   padding: 0;
+   opacity: 0.5;
+   color: black;
+   font-weight: bolder;
+   font-size: 25px;
+}
+.chat-messages-create-container{
+   /* background: #4b7b59; */
+   background-image: url('https://w0.peakpx.com/wallpaper/818/148/HD-wallpaper-whatsapp-background-cool-dark-green-new-theme-whatsapp.jpg');
+   height: 100px;
+   display: flex;
+   justify-content: center;
+}
+.chat-messages-create-input {
+   padding: 15px;
+   margin: 29px 30px;
+   flex:2;
+   background: #00260b;
+   color: white;
+}
+.chat-messages-create-button {
+   height: 50px;
+   margin: auto 40px;
+   width: 100px;
+   background: #00260b;
+   color: white;
+}
+.chat-messages-create-button:hover{
+  background: white;
+  color: #00260b;
+}
+</style>
+
+
+
+<div class="chat-messages">
+  <div class="chat-messages-show-container">
+    <ul class="chat-messages-show-list" id="message-list">
+    </ul>
+  </div>
+  <div class="chat-messages-create-container">
+    <input class="chat-messages-create-input" type="text" [(ngModel)]="message" placeholder="Enter You Message">
+    <button  class="chat-messages-create-button" (click)="SendMessage()"> Send </button>
+  </div>
+</div>
+
