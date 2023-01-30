@@ -1,0 +1,98 @@
+<style>
+  :host {
+    font-size: 20px;
+  }
+
+  .body{
+    /* background-image: conic-gradient(black, rgb(48, 2, 58), black, rgb(48, 2, 58), black); */
+    /* background-image: url('https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHVycGxlJTIwZ3JhZGllbnR8ZW58MHx8MHx8&w=1000&q=80'); */
+    height: 713px;
+    /*background-repeat: no-repeat;
+    background-size: cover; */
+  }
+
+  .bgform {
+    width: 550px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 70px;
+    font-size: 18px;
+    padding: 50px;
+    color: black;
+  }
+
+  .left {
+    /* background-color: rgb(56, 0, 0); */
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP0AAADHCAMAAADlCqUFAAAAQlBMVEUeAAAwAABAAABSAQBjAQB0AACFAAGWAAGmAAAyAACtAAAAAACcAAFGAAFnAAGKAAFrAABbAAA2AQATAABNAQAaAACOAlDYAAABCUlEQVR4nO3PWwqCQAAAwE1Nd11bn93/qgX+CIEY9NfMDSbEGPs8dG/Do7S7MUz3o3kpzYeybvWZLVeXpGe6fS3l8BP29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29n+2fwGTjD6Uxkl9TQAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    float: left;
+    width: 60%;
+    height: 713px;
+    text-align: right;
+  }
+
+  .left .a{
+    margin-top: 200px;
+  }
+
+  .left p{
+    color: white;
+  }
+
+  .right {
+    float: left;
+    width: 40%;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  /* Use a media query to add a break point at 800px: */
+  @media screen and (max-width: 800px) {
+    .left, .right {
+      width: 100%;
+    }
+  }
+
+  button:hover {
+    background-color:  rgb(56, 0, 0) ;
+    border-color:  rgb(56, 0, 0);
+  }
+
+</style>
+
+<div class="body">
+
+  <div class="left">
+    <div class="a">
+      <p style="font-family: 'Copperplate Gothic Bold'; font-size: 60px;">ADMIN LOGIN</p>
+    </div>
+  </div>
+
+  <div class="right">
+    <section>
+      <div class="bgform">
+        <div class="container mt-4" class="formb" >
+          <p style="font-family: Ink Free; font-size: 80px; text-align: center;">cine<b>MAX</b></p>
+          <h2 style="font-family: 'Copperplate Gothic Bold'; text-align: center;"><b>LOGIN</b></h2>
+          <form  (ngSubmit)="onSubmit()">
+            <div class="form-group" style="padding: 10px;">
+              <h5>Admin - cineMAX</h5>
+              <input type="password" class="form-control" id="password"  [(ngModel)]="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-group" style="padding: 10px;">
+              <button type="submit" class="btn btn-primary" style=" width: 450px;">Login</button>
+            </div>
+          </form><br>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+
