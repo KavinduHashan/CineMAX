@@ -1,0 +1,34 @@
+{
+  "name": "10749928_backend",
+  "version": "1.0.0",
+  "description": "CineMax - Online seat booking system",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node"
+  },
+  "keywords": [
+    "e-ticketing",
+    "movies",
+    "angular",
+    "nodejs"
+  ],
+  "author": "Porambage Hashan (10749928)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mocha": "^10.2.0",
+    "mongoose": "^6.8.3",
+    "save-dev": "^0.0.1-security",
+    "socket.io": "^4.5.4",
+    "stripe": "^11.6.0"
+  },
+  "devDependencies": {
+    "supertest": "^6.3.3"
+  }
+}
